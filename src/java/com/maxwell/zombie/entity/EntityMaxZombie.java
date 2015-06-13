@@ -88,7 +88,7 @@ public class EntityMaxZombie extends EntityMob
 	protected void applyEntityAttributes()
 	{
 		super.applyEntityAttributes();
-		this.getEntityAttribute(SharedMonsterAttributes.followRange).setBaseValue(35.0D);
+		this.getEntityAttribute(SharedMonsterAttributes.followRange).setBaseValue(40.0D);
 		this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setBaseValue(0.23000000417232513D);
 		this.getEntityAttribute(SharedMonsterAttributes.attackDamage).setBaseValue(3.0D);
 	}

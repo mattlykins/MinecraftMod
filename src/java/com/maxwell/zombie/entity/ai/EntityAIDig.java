@@ -31,6 +31,7 @@ public class EntityAIDig extends EntityAIBase
 	public EntityAIDig(EntityLiving entity)
 	{
 		this.theEntity = entity;
+		setMutexBits(8);
 	}
 
 	public EntityLivingBase target()
@@ -81,11 +82,11 @@ public class EntityAIDig extends EntityAIBase
 		{
 			this.theEntity.worldObj.playAuxSFX(1010, pos, 0);
 			this.theEntity.swingItem();
+			this.blockDamage += 0.1;// BlockHelper.getDamageAmount(this.targetBlock,
+									// this.theEntity, this.theEntity.worldObj,
+									// this.blockX, this.blockY, this.blockZ);
 		}
 
-		this.blockDamage += 0.3;// BlockHelper.getDamageAmount(this.targetBlock,
-								// this.theEntity, this.theEntity.worldObj,
-								// this.blockX, this.blockY, this.blockZ);
 		if (this.blockDamage >= 1.0F)
 		{
 			this.theEntity.worldObj.setBlockToAir(pos);
@@ -94,13 +95,13 @@ public class EntityAIDig extends EntityAIBase
 			this.blockDamage = 0.0F;
 		}
 
-		this.theEntity.worldObj.sendBlockBreakProgress(this.theEntity.getEntityId(), pos , (int) (this.blockDamage * 10.0F) - 1);
+		this.theEntity.worldObj.sendBlockBreakProgress(this.theEntity.getEntityId(), pos, (int) (this.blockDamage * 10.0F) - 1);
 	}
 
 	public void resetTask()
 	{
 		this.blockDamage = 0.0F;
-		this.theEntity.worldObj.sendBlockBreakProgress(this.theEntity.getEntityId(), new BlockPos(this.blockX, this.blockY, this.blockZ) , -1);
+		this.theEntity.worldObj.sendBlockBreakProgress(this.theEntity.getEntityId(), new BlockPos(this.blockX, this.blockY, this.blockZ), -1);
 	}
 
 	private boolean targetHighestObstruction(EntityLivingBase target)
@@ -116,7 +117,7 @@ public class EntityAIDig extends EntityAIBase
 		double dY = target.posY - this.theEntity.posY;
 		double dZ = target.posZ - this.theEntity.posZ;
 		double v = Math.sqrt(dX * dX + dY * dY + dZ * dZ);
-		boundingBox = boundingBox.addCoord(dX / v, dY / v, dZ / v);
+		boundingBox = boundingBox.addCoord(1+(dX / v), 1+(dY / v), 1+(dZ / v));
 
 		ArrayList<AxisAlignedBB> bbList = new ArrayList();
 		int minX = MathHelper.floor_double(boundingBox.minX);
@@ -137,11 +138,13 @@ public class EntityAIDig extends EntityAIBase
 						Block block = this.theEntity.worldObj.getBlockState(new BlockPos(x, y, z)).getBlock();
 						if (block != null)
 						{
-							block.addCollisionBoxesToList(this.theEntity.worldObj, new BlockPos(x, y, z) , null, boundingBox, bbList, this.theEntity);
+							block.addCollisionBoxesToList(this.theEntity.worldObj, new BlockPos(x, y, z), null, boundingBox, bbList, this.theEntity);
 							if (!bbList.isEmpty())
 							{
 								if (tryTargetBlock(block, x, y, z))
+								{
 									return true;
+								}
 								bbList.clear();
 							}
 						}
@@ -154,12 +157,9 @@ public class EntityAIDig extends EntityAIBase
 
 	private boolean tryTargetBlock(Block block, int x, int y, int z)
 	{
-		if (block != net.minecraft.init.Blocks.bedrock) // &&
-														// (BlockHelper.shouldDamage(block,
-														// this.theEntity,
-														// false,
-														// this.theEntity.worldObj,
-														// x, y, z)))
+		if (block != net.minecraft.init.Blocks.bedrock && block != net.minecraft.init.Blocks.air)
+		// && (BlockHelper.shouldDamage(block, this.theEntity, false,
+		// this.theEntity.worldObj, x, y, z)))
 		{
 			this.blockX = x;
 			this.blockY = y;
