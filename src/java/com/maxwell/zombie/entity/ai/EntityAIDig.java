@@ -88,7 +88,7 @@ public class EntityAIDig extends EntityAIBase
 								// this.blockX, this.blockY, this.blockZ);
 		if (this.blockDamage >= 1.0F)
 		{
-			this.theEntity.worldObj.markBlockForUpdate(pos);
+			this.theEntity.worldObj.setBlockToAir(pos);
 			this.theEntity.worldObj.playAuxSFX(2001, pos, Block.getIdFromBlock(this.targetBlock));
 			this.theEntity.swingItem();
 			this.blockDamage = 0.0F;
