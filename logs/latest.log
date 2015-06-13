@@ -1,76 +1,81 @@
-[11:28:29] [main/INFO]: Logging in with username & password
-[11:28:33] [Client thread/INFO]: Setting user: MaxweII
-[11:28:35] [Client thread/INFO]: LWJGL Version: 2.9.1
-[11:28:39] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Zombie
-[11:28:39] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[11:28:39] [Thread-9/INFO]: Initializing LWJGL OpenAL
-[11:28:39] [Thread-9/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[11:28:39] [Thread-9/INFO]: OpenAL initialized.
-[11:28:40] [Sound Library Loader/INFO]: Sound engine started
-[11:28:44] [Client thread/INFO]: Created: 512x512 textures-atlas
-[11:28:45] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Zombie
-[11:28:45] [Client thread/INFO]: SoundSystem shutting down...
-[11:28:45] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
-[11:28:45] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[11:28:45] [Thread-11/INFO]: Initializing LWJGL OpenAL
-[11:28:45] [Thread-11/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[11:28:45] [Thread-11/INFO]: OpenAL initialized.
-[11:28:46] [Sound Library Loader/INFO]: Sound engine started
-[11:28:47] [Client thread/INFO]: Created: 512x512 textures-atlas
-[11:28:52] [Client thread/INFO]: Deleting level New World
-[11:28:52] [Client thread/INFO]: Attempt 1...
-[11:28:58] [Server thread/INFO]: Starting integrated minecraft server version 1.8
-[11:28:58] [Server thread/INFO]: Generating keypair
-[11:28:58] [Server thread/INFO]: Converting map!
-[11:28:58] [Server thread/INFO]: Scanning folders...
-[11:28:58] [Server thread/INFO]: Total conversion count is 0
-[11:28:59] [Server thread/INFO]: Preparing start region for level 0
-[11:29:00] [Server thread/INFO]: Changing view distance to 12, from 10
-[11:29:01] [Server thread/INFO]: MaxweII[local:E:2b766c28] logged in with entity id 15 at (903.5, 4.0, 545.5)
-[11:29:01] [Server thread/INFO]: MaxweII joined the game
-[11:29:04] [Server thread/INFO]: MaxweII has just earned the achievement [Taking Inventory]
-[11:29:04] [Client thread/INFO]: [CHAT] MaxweII has just earned the achievement [Taking Inventory]
-[11:30:52] [Server thread/INFO]: [MaxweII: Set the time to 13000]
-[11:30:52] [Client thread/INFO]: [CHAT] Set the time to 13000
-[11:30:57] [Server thread/INFO]: [MaxweII: Added 3600 to the time]
-[11:30:57] [Client thread/INFO]: [CHAT] Added 3600 to the time
-[11:31:08] [Server thread/INFO]: [MaxweII: Set own game mode to Survival Mode]
-[11:31:08] [Client thread/INFO]: [CHAT] Your game mode has been updated
-[11:32:17] [Server thread/INFO]: MaxweII was slain by entity.zombie.maxzombie.name
-[11:32:17] [Client thread/INFO]: [CHAT] MaxweII was slain by entity.zombie.maxzombie.name
-[11:32:34] [Server thread/INFO]: MaxweII was slain by entity.zombie.maxzombie.name
-[11:32:34] [Client thread/INFO]: [CHAT] MaxweII was slain by entity.zombie.maxzombie.name
-[11:33:10] [Server thread/INFO]: MaxweII was slain by entity.zombie.maxzombie.name
-[11:33:10] [Client thread/INFO]: [CHAT] MaxweII was slain by entity.zombie.maxzombie.name
-[11:33:17] [Server thread/INFO]: MaxweII was slain by entity.zombie.maxzombie.name
-[11:33:17] [Client thread/INFO]: [CHAT] MaxweII was slain by entity.zombie.maxzombie.name
-[11:33:28] [Server thread/INFO]: MaxweII was slain by entity.zombie.maxzombie.name
-[11:33:28] [Client thread/INFO]: [CHAT] MaxweII was slain by entity.zombie.maxzombie.name
-[11:33:33] [Server thread/INFO]: [MaxweII: Set own game mode to Creative Mode]
-[11:33:33] [Client thread/INFO]: [CHAT] Your game mode has been updated
-[11:34:30] [Server thread/INFO]: [MaxweII: Set own game mode to Survival Mode]
-[11:34:30] [Client thread/INFO]: [CHAT] Your game mode has been updated
-[11:36:03] [Server thread/INFO]: [MaxweII: Set the time to 0]
-[11:36:03] [Client thread/INFO]: [CHAT] Set the time to 0
-[11:38:51] [Server thread/INFO]: [MaxweII: Set own game mode to Creative Mode]
-[11:38:51] [Client thread/INFO]: [CHAT] Your game mode has been updated
-[11:39:21] [Server thread/INFO]: [MaxweII: Set own game mode to Survival Mode]
-[11:39:21] [Client thread/INFO]: [CHAT] Your game mode has been updated
-[11:39:39] [Client thread/INFO]: [CHAT] Unknown command. Try /help for a list of commands
-[11:39:43] [Server thread/INFO]: [MaxweII: Set own game mode to Creative Mode]
-[11:39:43] [Client thread/INFO]: [CHAT] Your game mode has been updated
-[11:40:04] [Server thread/INFO]: [MaxweII: Set own game mode to Survival Mode]
-[11:40:04] [Client thread/INFO]: [CHAT] Your game mode has been updated
-[11:41:06] [Server thread/INFO]: Saving and pausing game...
-[11:41:06] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[11:41:06] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[11:41:06] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[11:41:07] [Server thread/INFO]: Stopping server
-[11:41:07] [Server thread/INFO]: Saving players
-[11:41:07] [Server thread/INFO]: Saving worlds
-[11:41:07] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[11:41:07] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[11:41:07] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[11:41:16] [Client thread/INFO]: Stopping!
-[11:41:16] [Client thread/INFO]: SoundSystem shutting down...
-[11:41:16] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[17:17:20] [main/INFO]: Logging in with username & password
+[17:17:24] [Client thread/INFO]: Setting user: MaxweII
+[17:17:26] [Client thread/INFO]: LWJGL Version: 2.9.1
+[17:17:30] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Zombie
+[17:17:31] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[17:17:31] [Thread-9/INFO]: Initializing LWJGL OpenAL
+[17:17:31] [Thread-9/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[17:17:31] [Thread-9/INFO]: OpenAL initialized.
+[17:17:31] [Sound Library Loader/INFO]: Sound engine started
+[17:17:34] [Client thread/INFO]: Created: 512x512 textures-atlas
+[17:17:34] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Zombie
+[17:17:35] [Client thread/INFO]: SoundSystem shutting down...
+[17:17:35] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[17:17:35] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[17:17:35] [Thread-11/INFO]: Initializing LWJGL OpenAL
+[17:17:35] [Thread-11/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[17:17:35] [Thread-11/INFO]: OpenAL initialized.
+[17:17:35] [Sound Library Loader/INFO]: Sound engine started
+[17:17:37] [Client thread/INFO]: Created: 512x512 textures-atlas
+[17:17:41] [Server thread/INFO]: Starting integrated minecraft server version 1.8
+[17:17:41] [Server thread/INFO]: Generating keypair
+[17:17:41] [Server thread/INFO]: Preparing start region for level 0
+[17:17:43] [Server thread/INFO]: Changing view distance to 12, from 10
+[17:17:43] [Server thread/INFO]: MaxweII[local:E:105b6d1a] logged in with entity id 381 at (-11.469970743036427, 92.0, 4.292815710297894)
+[17:17:43] [Server thread/INFO]: MaxweII joined the game
+[17:19:20] [Server thread/INFO]: Saving and pausing game...
+[17:19:20] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[17:19:20] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[17:19:20] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[17:19:21] [Server thread/INFO]: Stopping server
+[17:19:21] [Server thread/INFO]: Saving players
+[17:19:21] [Server thread/INFO]: Saving worlds
+[17:19:21] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[17:19:21] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[17:19:21] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[17:19:26] [Client thread/INFO]: Deleting level New World
+[17:19:26] [Client thread/INFO]: Attempt 1...
+[17:19:29] [Server thread/INFO]: Starting integrated minecraft server version 1.8
+[17:19:29] [Server thread/INFO]: Generating keypair
+[17:19:29] [Server thread/INFO]: Converting map!
+[17:19:29] [Server thread/INFO]: Scanning folders...
+[17:19:29] [Server thread/INFO]: Total conversion count is 0
+[17:19:30] [Server thread/INFO]: Preparing start region for level 0
+[17:19:31] [Server thread/INFO]: Preparing spawn area: 7%
+[17:19:32] [Server thread/INFO]: Preparing spawn area: 16%
+[17:19:33] [Server thread/INFO]: Preparing spawn area: 25%
+[17:19:34] [Server thread/INFO]: Preparing spawn area: 35%
+[17:19:35] [Server thread/INFO]: Preparing spawn area: 46%
+[17:19:36] [Server thread/INFO]: Preparing spawn area: 58%
+[17:19:37] [Server thread/INFO]: Preparing spawn area: 70%
+[17:19:38] [Server thread/INFO]: Preparing spawn area: 82%
+[17:19:39] [Server thread/INFO]: Preparing spawn area: 95%
+[17:19:39] [Server thread/INFO]: Changing view distance to 12, from 10
+[17:19:39] [Server thread/INFO]: MaxweII[local:E:ffeb0664] logged in with entity id 10507 at (134.5, 78.0, 246.5)
+[17:19:39] [Server thread/INFO]: MaxweII joined the game
+[17:19:43] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3446ms behind, skipping 68 tick(s)
+[17:19:57] [Server thread/INFO]: [MaxweII: Set the time to 13000]
+[17:19:57] [Client thread/INFO]: [CHAT] Set the time to 13000
+[17:19:58] [Server thread/INFO]: MaxweII has just earned the achievement [Taking Inventory]
+[17:19:58] [Client thread/INFO]: [CHAT] MaxweII has just earned the achievement [Taking Inventory]
+[17:20:26] [Chunk Batcher 0/WARN]: Needed to grow BufferBuilder buffer: Old size 524288 bytes, new size 2621440 bytes.
+[17:21:28] [Server thread/INFO]: [MaxweII: Set own game mode to Survival Mode]
+[17:21:28] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[17:25:16] [Server thread/INFO]: [MaxweII: Set own game mode to Creative Mode]
+[17:25:16] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[17:25:27] [Server thread/INFO]: [MaxweII: Set own game mode to Survival Mode]
+[17:25:27] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[17:28:10] [Chunk Batcher 0/WARN]: Needed to grow BufferBuilder buffer: Old size 524288 bytes, new size 2621440 bytes.
+[17:28:47] [Server thread/INFO]: Saving and pausing game...
+[17:28:47] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[17:28:47] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[17:28:47] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[17:28:49] [Server thread/INFO]: Stopping server
+[17:28:49] [Server thread/INFO]: Saving players
+[17:28:49] [Server thread/INFO]: Saving worlds
+[17:28:49] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[17:28:49] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[17:28:49] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[17:28:51] [Client thread/INFO]: Stopping!
+[17:28:51] [Client thread/INFO]: SoundSystem shutting down...
+[17:28:51] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

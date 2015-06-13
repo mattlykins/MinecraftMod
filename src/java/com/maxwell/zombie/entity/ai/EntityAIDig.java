@@ -117,7 +117,7 @@ public class EntityAIDig extends EntityAIBase
 		double dY = target.posY - this.theEntity.posY;
 		double dZ = target.posZ - this.theEntity.posZ;
 		double v = Math.sqrt(dX * dX + dY * dY + dZ * dZ);
-		boundingBox = boundingBox.addCoord(1+(dX / v), 1+(dY / v), 1+(dZ / v));
+		boundingBox = boundingBox.addCoord(dX / v, dY / v, dZ / v);
 
 		ArrayList<AxisAlignedBB> bbList = new ArrayList();
 		int minX = MathHelper.floor_double(boundingBox.minX);
@@ -129,6 +129,7 @@ public class EntityAIDig extends EntityAIBase
 
 		if (this.theEntity.worldObj.isAreaLoaded(new BlockPos(minX, minY, minZ), new BlockPos(maxX, maxY, maxZ)))
 		{
+
 			for (int y = maxY; y >= minY; y--)
 			{
 				for (int x = minX; x <= maxX; x++)
@@ -141,7 +142,13 @@ public class EntityAIDig extends EntityAIBase
 							block.addCollisionBoxesToList(this.theEntity.worldObj, new BlockPos(x, y, z), null, boundingBox, bbList, this.theEntity);
 							if (!bbList.isEmpty())
 							{
-								if (tryTargetBlock(block, x, y, z))
+								AxisAlignedBB test = bbList.get(random().nextInt(bbList.size()));
+								int testX = MathHelper.floor_double((test.maxX + test.minX)/2);
+								int testY = MathHelper.floor_double((test.maxY + test.minY)/2);
+								int testZ = MathHelper.floor_double((test.maxZ + test.minZ)/2);
+								
+								
+								if (tryTargetBlock(block, testX, testY, testZ))
 								{
 									return true;
 								}
