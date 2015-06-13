@@ -1,0 +1,123 @@
+---- Minecraft Crash Report ----
+// Everything's going to plan. No, really, that was supposed to happen.
+
+Time: 6/12/15 10:07 AM
+Description: Rendering entity in world
+
+java.lang.ClassCastException: com.maxwell.zombie.entity.MaxZombie cannot be cast to net.minecraft.entity.monster.EntityZombie
+	at com.maxwell.zombie.client.render.entity.RenderMaxZombie.doRender(RenderMaxZombie.java:153)
+	at net.minecraft.client.renderer.entity.RenderManager.doRenderEntity(RenderManager.java:377)
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntityStatic(RenderManager.java:334)
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntitySimple(RenderManager.java:301)
+	at net.minecraft.client.renderer.RenderGlobal.renderEntities(RenderGlobal.java:657)
+	at net.minecraft.client.renderer.EntityRenderer.renderWorldPass(EntityRenderer.java:1350)
+	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1263)
+	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1088)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1114)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:376)
+	at net.minecraft.client.main.Main.main(Main.java:117)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at com.maxwell.zombie.client.render.entity.RenderMaxZombie.doRender(RenderMaxZombie.java:153)
+
+-- Entity being rendered --
+Details:
+	Entity Type: zombie.maxzombie (com.maxwell.zombie.entity.MaxZombie)
+	Entity ID: 5537
+	Entity Name: entity.zombie.maxzombie.name
+	Entity's Exact location: 63.06, 96.59, 236.59
+	Entity's Block location: 63.00,96.00,236.00 - World: (63,96,236), Chunk: (at 15,6,12 in 3,14; contains blocks 48,0,224 to 63,255,239), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Entity's Momentum: 0.00, 0.00, 0.00
+	Entity's Rider: ~~ERROR~~ NullPointerException: null
+	Entity's Vehicle: ~~ERROR~~ NullPointerException: null
+
+-- Renderer details --
+Details:
+	Assigned renderer: com.maxwell.zombie.client.render.entity.RenderMaxZombie@15cd990c
+	Location: -0.01,-0.01,-0.01 - World: (-1,-1,-1), Chunk: (at 15,-1,15 in -1,-1; contains blocks -16,0,-16 to -1,255,-1), Region: (-1,-1; contains chunks -32,-32 to -1,-1, blocks -512,0,-512 to -1,255,-1)
+	Rotation: 0.0
+	Delta: 0.9008764
+Stacktrace:
+	at net.minecraft.client.renderer.entity.RenderManager.doRenderEntity(RenderManager.java:377)
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntityStatic(RenderManager.java:334)
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntitySimple(RenderManager.java:301)
+	at net.minecraft.client.renderer.RenderGlobal.renderEntities(RenderGlobal.java:657)
+	at net.minecraft.client.renderer.EntityRenderer.renderWorldPass(EntityRenderer.java:1350)
+	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1263)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityPlayerSP['MaxweII'/165, l='MpServer', x=63.08, y=96.61, z=236.60]]
+	Chunk stats: MultiplayerChunkCache: 547, 547
+	Level seed: 0
+	Level generator: ID 00 - default, ver 1. Features enabled: false
+	Level generator options: 
+	Level spawn location: 64.00,64.00,252.00 - World: (64,64,252), Chunk: (at 0,4,12 in 4,15; contains blocks 64,0,240 to 79,255,255), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 595 game time, 595 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 84 total; [EntityRabbit['Rabbit'/42, l='MpServer', x=52.50, y=69.00, z=315.50], EntityRabbit['Rabbit'/43, l='MpServer', x=51.34, y=70.00, z=316.34], EntityRabbit['Rabbit'/44, l='MpServer', x=46.47, y=69.00, z=308.88], EntityRabbit['Rabbit'/54, l='MpServer', x=77.50, y=73.00, z=199.50], EntitySkeleton['Skeleton'/2102, l='MpServer', x=123.84, y=35.00, z=206.63], EntityRabbit['Rabbit'/55, l='MpServer', x=78.34, y=73.00, z=199.34], EntityRabbit['Rabbit'/56, l='MpServer', x=77.34, y=72.00, z=198.34], EntityRabbit['Rabbit'/57, l='MpServer', x=74.09, y=74.27, z=233.47], EntityRabbit['Rabbit'/58, l='MpServer', x=69.41, y=72.00, z=235.31], EntityRabbit['Rabbit'/59, l='MpServer', x=83.47, y=77.02, z=225.88], EntityRabbit['Rabbit'/63, l='MpServer', x=103.50, y=69.00, z=168.50], EntityRabbit['Rabbit'/64, l='MpServer', x=101.34, y=69.00, z=169.34], EntityRabbit['Rabbit'/65, l='MpServer', x=100.34, y=69.00, z=168.34], EntityRabbit['Rabbit'/72, l='MpServer', x=115.50, y=78.00, z=174.50], EntityRabbit['Rabbit'/73, l='MpServer', x=117.34, y=79.00, z=173.34], EntityRabbit['Rabbit'/74, l='MpServer', x=116.34, y=78.00, z=172.34], EntityRabbit['Rabbit'/75, l='MpServer', x=105.50, y=72.00, z=172.50], EntityRabbit['Rabbit'/76, l='MpServer', x=106.34, y=73.00, z=173.34], EntityRabbit['Rabbit'/77, l='MpServer', x=107.34, y=74.00, z=172.34], EntityRabbit['Rabbit'/90, l='MpServer', x=121.50, y=75.00, z=211.50], EntityRabbit['Rabbit'/91, l='MpServer', x=123.34, y=74.00, z=215.34], EntityRabbit['Rabbit'/92, l='MpServer', x=123.34, y=75.00, z=211.34], EntityPlayerSP['MaxweII'/165, l='MpServer', x=63.08, y=96.61, z=236.60], EntitySpider['Spider'/229, l='MpServer', x=129.72, y=53.00, z=195.16], EntityBat['Bat'/234, l='MpServer', x=128.94, y=53.00, z=166.81], EntityBat['Bat'/235, l='MpServer', x=128.81, y=46.19, z=169.28], EntityBat['Bat'/254, l='MpServer', x=65.03, y=23.69, z=172.63], EntityBat['Bat'/256, l='MpServer', x=67.25, y=21.10, z=159.47], EntityBat['Bat'/456, l='MpServer', x=89.49, y=23.56, z=154.47], EntityBat['Bat'/482, l='MpServer', x=103.00, y=14.10, z=262.50], EntityBat['Bat'/483, l='MpServer', x=99.20, y=10.91, z=253.20], EntityZombie['Zombie'/525, l='MpServer', x=34.63, y=33.00, z=205.13], EntityCreeper['Creeper'/526, l='MpServer', x=133.50, y=46.00, z=167.50], EntityWitch['Witch'/531, l='MpServer', x=128.31, y=53.00, z=183.81], EntityZombie['Zombie'/582, l='MpServer', x=-18.47, y=23.07, z=226.22], EntityCreeper['Creeper'/606, l='MpServer', x=116.94, y=55.00, z=219.44], EntityCreeper['Creeper'/607, l='MpServer', x=104.47, y=56.00, z=208.97], EntityBat['Bat'/680, l='MpServer', x=29.73, y=43.07, z=205.72], EntityBat['Bat'/823, l='MpServer', x=64.93, y=23.53, z=171.03], EntityBat['Bat'/828, l='MpServer', x=128.19, y=57.10, z=199.41], EntityBat['Bat'/849, l='MpServer', x=59.64, y=55.20, z=170.09], EntityBat['Bat'/850, l='MpServer', x=56.64, y=55.16, z=185.64], EntityBat['Bat'/851, l='MpServer', x=63.47, y=55.14, z=177.78], EntityCreeper['Creeper'/891, l='MpServer', x=44.50, y=20.00, z=175.50], EntityCreeper['Creeper'/892, l='MpServer', x=43.50, y=20.00, z=174.50], EntitySkeleton['Skeleton'/893, l='MpServer', x=53.50, y=20.00, z=171.50], EntitySkeleton['Skeleton'/964, l='MpServer', x=48.50, y=18.00, z=176.50], EntityZombie['Zombie'/5063, l='MpServer', x=131.69, y=41.25, z=177.69], EntityZombie['Zombie'/5064, l='MpServer', x=129.28, y=42.00, z=179.69], EntityZombie['Zombie'/5066, l='MpServer', x=129.41, y=42.00, z=186.44], EntityZombie['Zombie'/5067, l='MpServer', x=130.28, y=41.00, z=180.28], EntitySpider['Spider'/1044, l='MpServer', x=49.50, y=33.00, z=192.50], EntityZombie['Zombie'/1166, l='MpServer', x=134.50, y=54.00, z=193.50], EntitySkeleton['Skeleton'/1195, l='MpServer', x=38.69, y=32.00, z=203.28], EntitySkeleton['Skeleton'/1196, l='MpServer', x=30.88, y=36.00, z=203.47], EntityZombie['Zombie'/1211, l='MpServer', x=47.50, y=17.00, z=173.50], EntitySkeleton['Skeleton'/1257, l='MpServer', x=81.50, y=66.00, z=222.50], EntitySkeleton['Skeleton'/1258, l='MpServer', x=82.50, y=66.00, z=221.50], EntityCreeper['Creeper'/1259, l='MpServer', x=83.50, y=66.00, z=221.50], EntityCreeper['Creeper'/1260, l='MpServer', x=75.50, y=66.00, z=223.50], EntityZombie['Zombie'/1262, l='MpServer', x=128.47, y=56.00, z=202.06], EntityZombie['Zombie'/1263, l='MpServer', x=129.47, y=53.00, z=183.94], EntityZombie['Zombie'/5410, l='MpServer', x=65.06, y=87.00, z=238.53], EntityBat['Bat'/5511, l='MpServer', x=10.19, y=43.03, z=207.56], EntitySkeleton['Skeleton'/1424, l='MpServer', x=134.50, y=53.00, z=184.50], MaxZombie['entity.zombie.maxzombie.name'/5537, l='MpServer', x=63.06, y=96.59, z=236.59], EntityZombie['Zombie'/1560, l='MpServer', x=78.50, y=21.00, z=157.50], EntitySkeleton['Skeleton'/1619, l='MpServer', x=91.50, y=23.00, z=202.50], EntitySkeleton['Skeleton'/1620, l='MpServer', x=90.50, y=23.00, z=204.50], EntitySkeleton['Skeleton'/1621, l='MpServer', x=92.50, y=23.00, z=203.50], EntitySkeleton['Skeleton'/1639, l='MpServer', x=141.50, y=30.00, z=238.50], EntityCreeper['Creeper'/1725, l='MpServer', x=3.97, y=19.00, z=168.56], EntityCreeper['Creeper'/1757, l='MpServer', x=103.50, y=15.00, z=218.50], EntityCreeper['Creeper'/3815, l='MpServer', x=130.78, y=64.00, z=249.66], EntitySpider['Spider'/3816, l='MpServer', x=132.31, y=65.19, z=253.25], EntitySpider['Spider'/1829, l='MpServer', x=21.50, y=16.00, z=173.50], EntityZombie['Zombie'/1832, l='MpServer', x=22.50, y=16.00, z=168.50], EntitySkeleton['Skeleton'/1833, l='MpServer', x=22.50, y=16.00, z=170.50], EntitySkeleton['Skeleton'/1834, l='MpServer', x=22.50, y=16.00, z=171.50], EntitySkeleton['Skeleton'/1850, l='MpServer', x=92.50, y=55.00, z=241.50], EntityCreeper['Creeper'/1851, l='MpServer', x=97.50, y=55.00, z=238.50], EntitySkeleton['Skeleton'/1852, l='MpServer', x=96.50, y=55.00, z=234.50], EntityCreeper['Creeper'/2011, l='MpServer', x=132.50, y=51.00, z=172.69], EntityCreeper['Creeper'/2020, l='MpServer', x=93.13, y=18.00, z=231.47]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:392)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2614)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:398)
+	at net.minecraft.client.main.Main.main(Main.java:117)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.8
+	Operating System: Windows 7 (amd64) version 6.1
+	Java Version: 1.8.0_45, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 461315776 bytes (439 MB) / 965214208 bytes (920 MB) up to 1907359744 bytes (1819 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 12, tallocated: 94
+	FML: MCP v9.10 FML v8.0.99.99 Minecraft Forge 11.14.2.1436 4 mods loaded, 4 mods active
+	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	FML{8.0.99.99} [Forge Mod Loader] (forgeSrc-1.8-11.14.2.1436.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Forge{11.14.2.1436} [Minecraft Forge] (forgeSrc-1.8-11.14.2.1436.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	zombie{1.0.0} [Zombie] (bin) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Loaded coremods (and transformers): 
+	GL info: ' Vendor: 'ATI Technologies Inc.' Version: '4.4.13283 Compatibility Profile Context 14.501.1003.0' Renderer: 'AMD Radeon HD 6800 Series'
+	Launched Version: 1.8
+	LWJGL: 2.9.1
+	OpenGL: AMD Radeon HD 6800 Series GL version 4.4.13283 Compatibility Profile Context 14.501.1003.0, ATI Technologies Inc.
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: No
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: []
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)

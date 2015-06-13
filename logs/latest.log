@@ -1,0 +1,100 @@
+[23:23:59] [main/INFO]: Logging in with username & password
+[23:24:03] [Client thread/INFO]: Setting user: MaxweII
+[23:24:05] [Client thread/INFO]: LWJGL Version: 2.9.1
+[23:24:08] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Zombie
+[23:24:09] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[23:24:09] [Thread-9/INFO]: Initializing LWJGL OpenAL
+[23:24:09] [Thread-9/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[23:24:09] [Thread-9/INFO]: OpenAL initialized.
+[23:24:09] [Sound Library Loader/INFO]: Sound engine started
+[23:24:11] [Client thread/INFO]: Created: 512x512 textures-atlas
+[23:24:12] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Zombie
+[23:24:12] [Client thread/INFO]: SoundSystem shutting down...
+[23:24:13] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[23:24:13] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[23:24:13] [Thread-11/INFO]: Initializing LWJGL OpenAL
+[23:24:13] [Thread-11/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[23:24:13] [Thread-11/INFO]: OpenAL initialized.
+[23:24:13] [Sound Library Loader/INFO]: Sound engine started
+[23:24:14] [Client thread/INFO]: Created: 512x512 textures-atlas
+[23:24:21] [Client thread/INFO]: Deleting level New World
+[23:24:21] [Client thread/INFO]: Attempt 1...
+[23:24:24] [Server thread/INFO]: Starting integrated minecraft server version 1.8
+[23:24:24] [Server thread/INFO]: Generating keypair
+[23:24:24] [Server thread/INFO]: Converting map!
+[23:24:24] [Server thread/INFO]: Scanning folders...
+[23:24:24] [Server thread/INFO]: Total conversion count is 0
+[23:24:25] [Server thread/INFO]: Preparing start region for level 0
+[23:24:26] [Server thread/INFO]: Preparing spawn area: 6%
+[23:24:27] [Server thread/INFO]: Preparing spawn area: 14%
+[23:24:28] [Server thread/INFO]: Preparing spawn area: 25%
+[23:24:29] [Server thread/INFO]: Preparing spawn area: 35%
+[23:24:30] [Server thread/INFO]: Preparing spawn area: 49%
+[23:24:31] [Server thread/INFO]: Preparing spawn area: 63%
+[23:24:32] [Server thread/INFO]: Preparing spawn area: 76%
+[23:24:33] [Server thread/INFO]: Preparing spawn area: 90%
+[23:24:34] [Server thread/INFO]: Changing view distance to 12, from 10
+[23:24:35] [Server thread/INFO]: MaxweII[local:E:88b42e28] logged in with entity id 463 at (-47.5, 74.0, 250.5)
+[23:24:35] [Server thread/INFO]: MaxweII joined the game
+[23:24:52] [Client thread/INFO]: [CHAT] You do not have permission to use this command
+[23:25:25] [Client thread/INFO]: [CHAT] Unknown command. Try /help for a list of commands
+[23:25:30] [Client thread/INFO]: [CHAT] Unknown command. Try /help for a list of commands
+[23:25:34] [Client thread/INFO]: [CHAT] Unknown command. Try /help for a list of commands
+[23:25:36] [Server thread/INFO]: Saving and pausing game...
+[23:25:36] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[23:25:36] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[23:25:36] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[23:25:54] [Server thread/INFO]: Stopping server
+[23:25:54] [Server thread/INFO]: Saving players
+[23:25:54] [Server thread/INFO]: Saving worlds
+[23:25:54] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[23:25:54] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[23:25:54] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[23:25:58] [Client thread/INFO]: Deleting level New World
+[23:25:58] [Client thread/INFO]: Attempt 1...
+[23:26:01] [Server thread/INFO]: Starting integrated minecraft server version 1.8
+[23:26:01] [Server thread/INFO]: Generating keypair
+[23:26:01] [Server thread/INFO]: Converting map!
+[23:26:01] [Server thread/INFO]: Scanning folders...
+[23:26:01] [Server thread/INFO]: Total conversion count is 0
+[23:26:01] [Server thread/INFO]: Preparing start region for level 0
+[23:26:02] [Server thread/INFO]: Preparing spawn area: 14%
+[23:26:03] [Server thread/INFO]: Preparing spawn area: 25%
+[23:26:04] [Server thread/INFO]: Preparing spawn area: 38%
+[23:26:05] [Server thread/INFO]: Preparing spawn area: 51%
+[23:26:06] [Server thread/INFO]: Preparing spawn area: 62%
+[23:26:07] [Server thread/INFO]: Preparing spawn area: 73%
+[23:26:08] [Server thread/INFO]: Preparing spawn area: 83%
+[23:26:09] [Server thread/INFO]: Preparing spawn area: 94%
+[23:26:10] [Server thread/INFO]: Changing view distance to 12, from 10
+[23:26:10] [Server thread/INFO]: MaxweII[local:E:321bd189] logged in with entity id 6736 at (-226.5, 64.0, 203.5)
+[23:26:10] [Server thread/INFO]: MaxweII joined the game
+[23:26:15] [Chunk Batcher 1/WARN]: Needed to grow BufferBuilder buffer: Old size 524288 bytes, new size 2621440 bytes.
+[23:26:15] [Chunk Batcher 1/WARN]: Needed to grow BufferBuilder buffer: Old size 524288 bytes, new size 2621440 bytes.
+[23:26:16] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 4498ms behind, skipping 89 tick(s)
+[23:26:23] [Server thread/INFO]: MaxweII has just earned the achievement [Taking Inventory]
+[23:26:23] [Client thread/INFO]: [CHAT] MaxweII has just earned the achievement [Taking Inventory]
+[23:26:28] [Chunk Batcher 0/WARN]: Needed to grow BufferBuilder buffer: Old size 524288 bytes, new size 2621440 bytes.
+[23:26:36] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 6528ms behind, skipping 130 tick(s)
+[23:26:47] [Chunk Batcher 0/WARN]: Needed to grow BufferBuilder buffer: Old size 524288 bytes, new size 2621440 bytes.
+[23:28:04] [Server thread/INFO]: [MaxweII: Set the time to 13000]
+[23:28:04] [Client thread/INFO]: [CHAT] Set the time to 13000
+[23:28:11] [Server thread/INFO]: [MaxweII: Added 3000 to the time]
+[23:28:11] [Client thread/INFO]: [CHAT] Added 3000 to the time
+[23:29:14] [Server thread/INFO]: [MaxweII: Set the time to 0]
+[23:29:14] [Client thread/INFO]: [CHAT] Set the time to 0
+[23:29:30] [Server thread/INFO]: [MaxweII: Set own game mode to Survival Mode]
+[23:29:30] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[23:33:30] [Server thread/INFO]: Saving and pausing game...
+[23:33:30] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[23:33:30] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[23:33:30] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[23:33:31] [Server thread/INFO]: Stopping server
+[23:33:31] [Server thread/INFO]: Saving players
+[23:33:31] [Server thread/INFO]: Saving worlds
+[23:33:31] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[23:33:31] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[23:33:31] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[23:33:33] [Client thread/INFO]: Stopping!
+[23:33:33] [Client thread/INFO]: SoundSystem shutting down...
+[23:33:33] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

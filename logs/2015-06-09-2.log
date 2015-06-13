@@ -1,0 +1,6 @@
+[08:00:51] [Server thread/INFO]: Starting minecraft server version 1.8
+[08:00:55] [Server thread/INFO]: Loading properties
+[08:00:55] [Server thread/WARN]: server.properties does not exist
+[08:00:55] [Server thread/INFO]: Generating new properties file
+[08:00:55] [Server thread/WARN]: Failed to load eula.txt
+[08:00:55] [Server thread/INFO]: You need to agree to the EULA in order to run the server. Go to eula.txt for more info.

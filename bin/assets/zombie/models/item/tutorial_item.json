@@ -1,0 +1,6 @@
+{
+    "parent":"zombie:item/standard_item",
+    "textures": {
+        "layer0":"zombie:items/tutorial_item"
+    }
+}
